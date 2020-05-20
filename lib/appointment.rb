@@ -13,11 +13,4 @@ class Appointment
   def self.all
     @@all
   end
-
-  def patients
-    self.patient
-  end
-
-  def new(name)
-  end
 end

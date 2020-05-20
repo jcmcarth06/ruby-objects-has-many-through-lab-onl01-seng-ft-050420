@@ -1,14 +1,11 @@
 class Patient
-  attr_accessor :name
+  attr_accessor :name, :appointment, :doctor
 
+  @@all = []
+  
   def initialize(name)
     @name = name
-  end
-
-  def patient
-    Appointment.all.map do |patient|
-      patient.appointment
-    end
+    @@all << self
   end
 
   def self.all
